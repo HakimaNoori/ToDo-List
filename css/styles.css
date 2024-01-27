@@ -1,0 +1,51 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(202, 235, 14) 50%, #272727 50%);
+}
+
+div.todo {
+    height: 450px;
+    width: 330px;
+    background-color: rgb(224, 171, 244);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+div.todo-list input [type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+div.checkbox,
+div.action {
+    width: 5%;
+}
+
+div.task {
+    width: 90%;
+}
+
+div.action {
+    font-size: 25px;
+}
+
+h3.delete {
+    text-decoration: line-through;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(45deg, rgb(202, 235, 14), #272727);
+    }
+
+    div.todo {
+        width: 100%;
+        max-width: none;
+    }
+}
